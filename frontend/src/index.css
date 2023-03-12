@@ -1,0 +1,128 @@
+main {
+  min-height: 80vh;
+}
+
+h3 {
+  padding: 1rem 0;
+}
+
+h1 {
+  font-size: 1.8rem;
+  padding: 1rem 0;
+}
+
+h2 {
+  font-size: 1.4rem;
+  padding: 0.5rem 0;
+}
+
+.rating span {
+  margin: 0.1rem;
+}
+
+/* carousel */
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+  display: flex;
+}
+.carousel-caption {
+  position: absolute;
+  top: 0;
+}
+
+.carousel-caption h2 {
+  color: #fff;
+}
+
+.carousel img {
+  height: 300px;
+  padding: 30px;
+  margin: 40px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.carousel a {
+  margin: 0 auto;
+}
+
+/* Navbar */
+.navbar {
+  background: transparent;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem 2rem;
+  z-index: 999;
+  width: 100%;
+  margin-bottom: 1rem;
+  top: 0;
+}
+
+.navbar.active {
+  background: linear-gradient(90deg, rgb(163, 44, 196)0%, rgb(0, 78, 194)100%);
+}
+
+.navbar-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  max-width: 100%;
+}
+.navbar-logo{
+  color: #e6d7ff;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar a {
+  color: black;
+  padding: 0.45rem;
+  margin: 0 0.25rem;
+}
+
+.navbar a:hover {
+  color: black;
+}
+
+.navbar .welcome span {
+  margin-right: 0.6rem;
+}
+#navbarScroll{
+  background: #a32cc4;
+}
+
+/* Navbar */
+
+#mynav {
+  background-color: #a32cc4;
+}
+
+
+
+.navbar {
+  display: block;
+  text-align: center;
+}
+
+.navbar ul {
+  text-align: center;
+  justify-content: center;
+}
+
+.rating span {
+  margin: o.1rem;
+}
+#product_name{
+  color: #a32cc4;
+}
+#product_price{
+  color: #770737;
+}
+
+
