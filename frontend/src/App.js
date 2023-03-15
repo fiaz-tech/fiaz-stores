@@ -8,7 +8,6 @@ import HomeScreen from './screens/HomeScreen';
 import ProductScreen from './screens/ProductScreen';
 import Footer from './components/Footer';
 import CartScreen from './screens/CartScreen';
-import TryScreen from './screens/TryScreen';
 import LoginScreen from './screens/LoginScreen';
 import RegisterScreen from './screens/RegisterScreen';
 import ProfileScreen from './screens/ProfileScreen';
@@ -23,7 +22,6 @@ import PlaceOrderScreen from './screens/PlaceOrderScreen';
 import OrderScreen from './screens/OrderScreen';
 import ProductCreateScreen from './screens/ProductCreateScreen';
 import OrderListScreen from './screens/OrderListScreen';
-import CollapsibleExample from './components/NavbarTest';
 
 
 
@@ -52,16 +50,8 @@ function App() {
           <Route path='/admin/userlist' element={<UserListScreen/>} />
           <Route path='/admin/user/:userId/edit' element={<UserEditScreen/>} />
           <Route path='/admin/productlist' element={<ProductListScreen/>} />
-          
-
           <Route path='/admin/upload' element={<ImageUpload/>} />
-
-          <Route path='/testnav' element={<CollapsibleExample/>} />
           
-          
-
-          <Route path='/try' element={<TryScreen/>} />
-
           <Route path="*" element={
             <main style={{ padding: "1rem" }}>
             <p>There's nothing here!</p>
