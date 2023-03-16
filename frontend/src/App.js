@@ -20,6 +20,7 @@ import ShippingScreen from './screens/ShippingScreen';
 import PaymentScreen from './screens/PaymentScreen';
 import PlaceOrderScreen from './screens/PlaceOrderScreen';
 import OrderScreen from './screens/OrderScreen';
+
 import ProductCreateScreen from './screens/ProductCreateScreen';
 import OrderListScreen from './screens/OrderListScreen';
 
@@ -28,7 +29,7 @@ import OrderListScreen from './screens/OrderListScreen';
 function App() {
 
   return (
-    <Router>
+    <>
       <Header/>
       <main className='py-3'>
       <Container>
@@ -51,6 +52,8 @@ function App() {
           <Route path='/admin/user/:userId/edit' element={<UserEditScreen/>} />
           <Route path='/admin/productlist' element={<ProductListScreen/>} />
           <Route path='/admin/upload' element={<ImageUpload/>} />
+
+          <Route path='/search/:keyword' element={<HomeScreen />} />
           
           <Route path="*" element={
             <main style={{ padding: "1rem" }}>
@@ -64,7 +67,7 @@ function App() {
       <Footer/>
       </main>
 
-      </Router>
+  </>
   );
 }
 

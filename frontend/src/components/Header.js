@@ -1,12 +1,21 @@
 import React, {useState, useEffect} from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Container, Navbar, Nav , NavDropdown } from 'react-bootstrap';
+import { Routes, Route, useParams } from 'react-router-dom';
 import { LinkContainer } from 'react-router-bootstrap';
 import { logout } from '../actions/userActions';
-
+import SearchBox from './SearchBox';
+import HomeScreen from '../screens/HomeScreen';
+import CartScreen from '../screens/CartScreen';
+import ProfileScreen from '../screens/ProfileScreen';
+import LoginScreen from '../screens/LoginScreen';
+import UserListScreen from '../screens/UserListScreen';
+import ProductListScreen from '../screens/ProductListScreen';
+import OrderListScreen from '../screens/OrderListScreen';
 const Header = ({color}) => {
 
   const dispatch = useDispatch()
+  const key = useParams()
 
   const userLogin = useSelector((state) => state.userLogin)
   const { userInfo } = userLogin
@@ -28,7 +37,9 @@ const Header = ({color}) => {
           <Navbar.Toggle aria-controls='navbarScroll' data-bs-target="#navbarScroll" />           
          
          <Navbar.Collapse id='navbarScroll'>
-            
+        
+          <SearchBox/>
+        
             <Nav className='ml-auto'>
 
             <LinkContainer to='/'>
@@ -75,16 +86,17 @@ const Header = ({color}) => {
               
             </Nav>
           </Navbar.Collapse>
-        
-            
+
         </Container>
       </Navbar>
+
+      
     </header>
   )
 }
 
 Header.defaultProps = {
-  color: '#f8e825',
+  color: '#fff',
 }
 
 export default Header
